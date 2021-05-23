@@ -1,0 +1,163 @@
+{
+  "project_info": {
+    "project_number": "808133846328",
+    "firebase_url": "https://fapmal.firebaseio.com",
+    "project_id": "fapmal",
+    "storage_bucket": "fapmal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808133846328:android:7f5893e47ad70373",
+        "android_client_info": {
+          "package_name": "com.deevd.jplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpOq424mMxTtwKt7tI99tcD9FFQghx2pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "808133846328-c44rpd9ltc6dt9p29rhm4ib8o6tfkkkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deevvdd.quick-chat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808133846328:android:9e6807eacaa6a1ea200dcd",
+        "android_client_info": {
+          "package_name": "com.deevvdd.shoestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpOq424mMxTtwKt7tI99tcD9FFQghx2pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "808133846328-c44rpd9ltc6dt9p29rhm4ib8o6tfkkkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deevvdd.quick-chat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808133846328:android:10da293334e233c0200dcd",
+        "android_client_info": {
+          "package_name": "com.example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpOq424mMxTtwKt7tI99tcD9FFQghx2pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "808133846328-c44rpd9ltc6dt9p29rhm4ib8o6tfkkkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deevvdd.quick-chat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808133846328:android:b2b04e9553fdd8d3200dcd",
+        "android_client_info": {
+          "package_name": "com.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808133846328-j8en00m239nofgk1d6hqqte3qn3u9o3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helloworld",
+            "certificate_hash": "cf5b633e55f187c9e48a6002b7886d1bad511c03"
+          }
+        },
+        {
+          "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpOq424mMxTtwKt7tI99tcD9FFQghx2pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808133846328-7lb039soqtpi0rrlv4bj83o0gps6evtd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "808133846328-c44rpd9ltc6dt9p29rhm4ib8o6tfkkkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deevvdd.quick-chat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

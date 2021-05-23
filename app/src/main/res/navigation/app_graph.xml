@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/shoeListingFragment">
+
+    <fragment
+        android:id="@+id/shoeListingFragment"
+        android:name="com.deevvdd.shoestore.features.home.ShoeListingFragment"
+        android:label="@string/text_shore_store"
+        tools:layout="@layout/fragment_shoe_listing">
+
+        <action
+            android:id="@+id/action_shoelisting_fragment_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/shoeListingFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_shoeListingFragment_to_addNewShoeFragment"
+            app:destination="@id/addNewShoeFragment" />
+
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_add_shoe"
+        android:id="@+id/addNewShoeFragment"
+        android:name="com.deevvdd.shoestore.features.AddNewShoeFragment"
+        android:label="@string/title_add_new_shoe" />
+</navigation>

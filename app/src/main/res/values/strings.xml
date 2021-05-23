@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="Login">Login</string>
+    <string name="SignUp">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="text_next">Next</string>
+    <string name="error_sign_in">Sign In fail. Please try again!.</string>
+    <string name="error_sign_up">Sign Up fail. Please try again!.</string>
+    <string name="error_title">Oops</string>
+    <string name="btn_text_close">CLOSE</string>
+    <string name="desc_floating_action">Add New Shoe</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_shore_store">Shoe Store</string>
+    <string name="title_add_new_shoe">Add New Shoe</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="shoe_prize">Prize</string>
+    <string name="shoe_company">Company</string>
+    <string name="shoe_stock">Stock</string>
+    <string name="create_shoe">Create</string>
+    <string name="text_welcome">Welcome from Shoe Store</string>
+    <string name="empty_shoe">Nothing to show</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_instruction2">No matter what size your shoe collection is, getting your shoes and boots organized makes them easy to find and protects them from damage. Fortunately, there are almost as many options to organize your shoes as there are shoe styles. </string>
+    <string name="text_instruction1">Instruction one</string>
+</resources>
