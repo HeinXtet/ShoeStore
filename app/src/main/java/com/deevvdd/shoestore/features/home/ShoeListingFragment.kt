@@ -11,13 +11,11 @@ import com.deevvdd.shoestore.databinding.FragmentShoeListingBinding
 import com.deevvdd.shoestore.features.main.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 
-
 class ShoeListingFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: FragmentShoeListingBinding
     private val mainViewModel: MainViewModel by activityViewModels()
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -45,7 +43,6 @@ class ShoeListingFragment : Fragment() {
         }
     }
 
-
     private fun handleOnLogout() {
         auth.signOut()
         findNavController().navigate(ShoeListingFragmentDirections.actionShoelistingFragmentToLogin())
@@ -62,6 +59,4 @@ class ShoeListingFragment : Fragment() {
         }
         return super.onOptionsItemSelected(item)
     }
-
-
 }

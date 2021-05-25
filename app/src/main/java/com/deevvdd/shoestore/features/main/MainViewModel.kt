@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModel
 import com.deevvdd.shoestore.model.ShoeModel
 import com.deevvdd.shoestore.utils.DoubleObserver
 import dagger.hilt.android.lifecycle.HiltViewModel
-import timber.log.Timber
 import javax.inject.Inject
+import timber.log.Timber
 
 @HiltViewModel
 class MainViewModel @Inject constructor() : ViewModel() {
@@ -28,7 +28,6 @@ class MainViewModel @Inject constructor() : ViewModel() {
     private val _shoeCreated = MutableLiveData<Boolean>()
     private val checkRequiredFields = DoubleObserver(shoeName, company)
 
-
     val shoes = Transformations.map(shoeLiveData) {
         it
     }
@@ -36,7 +35,6 @@ class MainViewModel @Inject constructor() : ViewModel() {
     val isEmptyShoes = Transformations.map(shoeLiveData) {
         it.isEmpty()
     }
-
 
     val shoeCreated: LiveData<Boolean>
         get() {
@@ -48,11 +46,9 @@ class MainViewModel @Inject constructor() : ViewModel() {
         _shoeCreated.value = false
     }
 
-
     val isValidToCreate = Transformations.map(checkRequiredFields) {
         !it.first.isNullOrEmpty() && !it.second.isNullOrEmpty()
     }
-
 
     fun addNewShoe() {
         Timber.d("Create Shoe ")
@@ -63,7 +59,7 @@ class MainViewModel @Inject constructor() : ViewModel() {
             company = company.value ?: "",
             prize = (prize.value ?: "0").toDouble(),
             quantity = (quantity.value ?: "0").toInt(),
-            imageUrl = "https://picsum.photos/200/300?random?Shoe=${randomNumber}"
+            imageUrl = "https://picsum.photos/200/300?random?Shoe=$randomNumber"
         )
         previousList.add(shoe)
         shoeLiveData.value = previousList

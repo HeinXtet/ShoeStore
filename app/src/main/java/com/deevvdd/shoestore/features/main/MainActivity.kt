@@ -14,7 +14,6 @@ import com.deevvdd.shoestore.utils.hide
 import com.deevvdd.shoestore.utils.show
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 

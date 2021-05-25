@@ -17,7 +17,6 @@ import com.deevvdd.shoestore.utils.hideKeyboard
 import com.deevvdd.shoestore.utils.show
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class LoginFragment : Fragment() {
 
@@ -57,7 +56,6 @@ class LoginFragment : Fragment() {
             }
         }
     }
-
 
     private fun initObserver() {
         loginViewModel.isValidToAuthenticate.observe(viewLifecycleOwner, {

@@ -14,7 +14,6 @@ import com.google.firebase.ktx.Firebase
 
 class WelcomeFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,14 +27,11 @@ class WelcomeFragment : Fragment() {
 
         val currentUser = Firebase.auth.currentUser
 
-
         if (currentUser != null) {
             binding.lifecycleOwner = viewLifecycleOwner
             binding.user = currentUser
         }
 
-
         return binding.root
     }
-
 }

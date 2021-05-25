@@ -33,7 +33,6 @@ class SplashFragment : Fragment() {
 
         val currentUser = auth.currentUser
 
-
         binding.tvSplash.animate().setDuration(2000).alpha(1f).scaleX(1f).scaleY(1f)
             .setInterpolator(BounceInterpolator())
             .setListener(object : Animator.AnimatorListener {

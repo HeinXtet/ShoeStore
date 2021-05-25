@@ -25,11 +25,11 @@ object UI {
         return px
     }
 
-    private fun createTv( title: String, context: Context): TextView {
+    private fun createTv(title: String, context: Context): TextView {
         val titleTv = TextView(context)
         titleTv.setTextColor(Color.BLACK)
-        val titlePaddingHorizontal = dp(8f,context)
-        val titlePaddingVertical = dp(4f,context)
+        val titlePaddingHorizontal = dp(8f, context)
+        val titlePaddingVertical = dp(4f, context)
         titleTv.setPadding(
             titlePaddingHorizontal,
             titlePaddingVertical,
@@ -42,8 +42,8 @@ object UI {
         return titleTv
     }
 
-     fun generateShoeCard(
-        containerView : LinearLayout,
+    fun generateShoeCard(
+        containerView: LinearLayout,
         shoe: ShoeModel,
         isLastIndex: Boolean,
         context: Context
@@ -71,7 +71,6 @@ object UI {
         linearLayout.addView(image)
         val contentLinearLayout = LinearLayout(context)
         contentLinearLayout.orientation = LinearLayout.VERTICAL
-
 
         contentLinearLayout.addView(createTv("Name : ${shoe.title}", context))
         contentLinearLayout.addView(createTv("Prize : $${shoe.prize}", context))
