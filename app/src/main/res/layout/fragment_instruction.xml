@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- in this layout,
+ i can use linear layout using weight sum to allocate the child position,
+  so i choose constraint layout instead of linear layout for more better performance
+   and it can easy to move the child view what i want not using the layout weight -->
+
 <layout>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- in this layout,
+ i can use linear layout using weight sum to allocate the child position,
+  so i choose constraint layout instead of linear layout for more better performance
+   and it can easy to move the child view what i want not using the layout weight -->
+
 <layout xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -20,12 +26,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_welcome"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="@dimen/font_biggest"
             android:translationY="-80dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

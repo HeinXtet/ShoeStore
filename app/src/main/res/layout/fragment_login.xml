@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+In this layout, in this layout i need to use constraint layout  instead of other viewgroups,
+if not using constrint layout i can  use relative layout or frame layout, coz linear layout is fine for vertically children
+ but can't design for progress bar, that is located in middle of the parent view.
+ In this case constraintlayout is more flexible and easy to handle them.
+ -->
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 

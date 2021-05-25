@@ -10,6 +10,8 @@ import com.deevvdd.shoestore.R
 import com.deevvdd.shoestore.databinding.FragmentShoeListingBinding
 import com.deevvdd.shoestore.features.main.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class ShoeListingFragment : Fragment() {
 
@@ -35,6 +37,7 @@ class ShoeListingFragment : Fragment() {
     }
 
     private fun initUI() {
+        auth = Firebase.auth
         setHasOptionsMenu(true)
         with(binding) {
             fbNewShoe.setOnClickListener {

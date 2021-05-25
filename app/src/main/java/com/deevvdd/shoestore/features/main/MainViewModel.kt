@@ -22,7 +22,7 @@ class MainViewModel @Inject constructor() : ViewModel() {
 
     val shoeName = MutableLiveData<String>()
     val company = MutableLiveData<String>()
-    val prize = MutableLiveData<String>()
+    val prize = MutableLiveData<Double>()
     val quantity = MutableLiveData<String>()
 
     private val _shoeCreated = MutableLiveData<Boolean>()
@@ -57,7 +57,7 @@ class MainViewModel @Inject constructor() : ViewModel() {
         val shoe = ShoeModel(
             title = shoeName.value ?: "",
             company = company.value ?: "",
-            prize = (prize.value ?: "0").toDouble(),
+            prize = (prize.value ?: 0.0),
             quantity = (quantity.value ?: "0").toInt(),
             imageUrl = "https://picsum.photos/200/300?random?Shoe=$randomNumber"
         )
@@ -65,7 +65,7 @@ class MainViewModel @Inject constructor() : ViewModel() {
         shoeLiveData.value = previousList
         shoeName.value = ""
         company.value = ""
-        prize.value = ""
+        prize.value = 0.0
         quantity.value = ""
         _shoeCreated.value = true
     }
