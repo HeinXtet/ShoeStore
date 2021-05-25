@@ -2,31 +2,36 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="vm"
+            type="com.deevvdd.shoestore.features.main.MainViewModel" />
+    </data>
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:fillViewport="true"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-              >
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:id="@+id/shoeContainer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-
-                </LinearLayout>
+                    android:orientation="vertical"
+                    app:shoes="@{vm.shoes}" />
 
 
                 <TextView
+                    android:visibility="@{vm.isEmptyShoes() ? View.VISIBLE: View.GONE}"
                     android:id="@+id/tvEmpty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

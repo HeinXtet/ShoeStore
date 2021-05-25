@@ -7,7 +7,6 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AccelerateInterpolator
 import android.view.animation.BounceInterpolator
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -50,10 +49,8 @@ class SplashFragment : Fragment() {
                         }
                     }, 1000)
                 }
-
                 override fun onAnimationCancel(animation: Animator?) {
                 }
-
                 override fun onAnimationRepeat(animation: Animator?) {
                 }
             }).start()

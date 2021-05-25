@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -16,7 +15,6 @@ import com.deevvdd.shoestore.databinding.FragmentLoginBinding
 import com.deevvdd.shoestore.utils.hide
 import com.deevvdd.shoestore.utils.hideKeyboard
 import com.deevvdd.shoestore.utils.show
-import com.google.android.material.dialog.MaterialDialogs
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -56,7 +54,6 @@ class LoginFragment : Fragment() {
             btnSignUp.setOnClickListener {
                 loginViewModel.signUp()
                 view?.hideKeyboard()
-//                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToAppGraph())
             }
         }
     }
